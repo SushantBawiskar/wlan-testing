@@ -1,0 +1,28 @@
+1652764843.817387: Successfully initialized wpa_supplicant
+1652764843.923212: CTRL_IFACE monitor attached /tmp/wpa_ctrl_4905-2\x00
+1652764843.923546: CTRL_IFACE monitor attached /tmp/wpa_ctrl_4905-1\x00
+1652764851.487008: nl80211: kernel reports: key not allowed, no current_bss
+1652764851.487220: nl80211: kernel reports: key not allowed, no current_bss
+1652764851.487374: nl80211: kernel reports: key not allowed, no current_bss
+1652764851.487494: nl80211: kernel reports: key not allowed, no current_bss
+1652764851.487647: nl80211: kernel reports: key not allowed, no current_bss
+1652764851.487784: nl80211: kernel reports: key not allowed, no current_bss
+1652764852.248302: sta0000: CTRL-EVENT-DSCP-POLICY clear_all
+1652764852.259474: sta0000: CTRL-EVENT-DSCP-POLICY clear_all
+1652764852.259609: nl80211: deinit ifname=sta0000
+1652764883.887004: nl80211: kernel reports: key not allowed, no current_bss
+1652764883.887215: nl80211: kernel reports: key not allowed, no current_bss
+1652764883.887326: nl80211: kernel reports: key not allowed, no current_bss
+1652764883.887433: nl80211: kernel reports: key not allowed, no current_bss
+1652764883.887594: nl80211: kernel reports: key not allowed, no current_bss
+1652764883.887746: nl80211: kernel reports: key not allowed, no current_bss
+1652764888.694792: sta100: SME: Trying to authenticate with 90:3c:b3:6c:46:de (SSID='ssid_open_5g_nat' freq=5180 MHz)
+1652764888.719353: sta100: Trying to associate with 90:3c:b3:6c:46:de (SSID='ssid_open_5g_nat' freq=5180 MHz)
+1652764888.735717: sta100: Associated with 90:3c:b3:6c:46:de
+1652764888.738818: sta100: CTRL-EVENT-CONNECTED - Connection to 90:3c:b3:6c:46:de completed [id=0 id_str=]
+1652764888.743467: sta100: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+1652764888.744638: sta100: CTRL-EVENT-REGDOM-CHANGE init=COUNTRY_IE type=COUNTRY alpha2=CA
+1652764949.450628: sta100: CTRL-EVENT-DISCONNECTED bssid=90:3c:b3:6c:46:de reason=3 locally_generated=1
+1652764949.592892: sta100: CTRL-EVENT-DSCP-POLICY clear_all
+1652764949.602797: sta100: CTRL-EVENT-DSCP-POLICY clear_all
+1652764949.602926: nl80211: deinit ifname=sta100

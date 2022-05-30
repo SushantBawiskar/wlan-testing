@@ -4,10 +4,7 @@ import os
 import time
 import pandas as pd
 
-pytestmark = [pytest.mark.regression,
-              pytest.mark.ow_sanity_lf,
-              pytest.mark.dfs,
-              pytest.mark.bridge]
+pytestmark = [pytest.mark.regression, pytest.mark.dfs, pytest.mark.bridge]
 
 setup_params_general1 = {
     "mode": "BRIDGE",
@@ -28,8 +25,6 @@ setup_params_general1 = {
     },
     "radius": False
 }
-
-
 @pytest.mark.parametrize(
     'setup_profiles',
     [setup_params_general1],
@@ -37,6 +32,7 @@ setup_params_general1 = {
     scope="class"
 )
 @pytest.mark.usefixtures("setup_profiles")
+
 class TestDFSChannel52Bw80(object):
     @allure.testcase(url="https://telecominfraproject.atlassian.net/browse/WIFI-6376", name="WIFI-6376")
     @pytest.mark.wpa2_personal
@@ -89,7 +85,6 @@ class TestDFSChannel52Bw80(object):
         if not dfs_fail:
             assert False
 
-
 setup_params_general2 = {
     "mode": "BRIDGE",
     "ssid_modes": {
@@ -109,8 +104,6 @@ setup_params_general2 = {
     },
     "radius": False
 }
-
-
 @pytest.mark.parametrize(
     'setup_profiles',
     [setup_params_general2],
@@ -118,6 +111,7 @@ setup_params_general2 = {
     scope="class"
 )
 @pytest.mark.usefixtures("setup_profiles")
+
 class TestDFSChannel100Bw80(object):
     @allure.testcase(url="https://telecominfraproject.atlassian.net/browse/WIFI-6311", name="WIFI-6311")
     @pytest.mark.wpa2_personal
@@ -169,7 +163,6 @@ class TestDFSChannel100Bw80(object):
             time.sleep(1)
         if not dfs_fail:
             assert False
-
 
 # setup_params_general3 = {
 #     "mode": "BRIDGE",
@@ -782,8 +775,6 @@ setup_params_general11 = {
     },
     "radius": False
 }
-
-
 @pytest.mark.parametrize(
     'setup_profiles',
     [setup_params_general11],
@@ -791,6 +782,7 @@ setup_params_general11 = {
     scope="class"
 )
 @pytest.mark.usefixtures("setup_profiles")
+
 class TestDFSChannel132Bw80(object):
     @allure.testcase(url="https://telecominfraproject.atlassian.net/browse/WIFI-6384", name="WIFI-6384")
     @pytest.mark.wpa2_personal

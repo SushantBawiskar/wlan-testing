@@ -541,7 +541,6 @@ class ProvUtils(ConfigureController):
         self.check_response("PUT", resp, self.make_headers(), payload, uri)
         return resp
 
-
     def get_venue(self):
         uri = self.build_url_prov("venue/")
         print(uri)
@@ -932,10 +931,9 @@ class UProfileUtility:
         allure.attach(name="/configure response: " + str(resp.status_code), body=str(resp.json()),
                       attachment_type=allure.attachment_type.JSON)
         self.sdk_client.check_response("POST", resp, self.sdk_client.make_headers(), basic_cfg_str, uri)
-        print(resp.url)
+        # print(resp.url)
         resp.close()
         print(resp)
-        return resp
 
 
 if __name__ == '__main__':
@@ -960,4 +958,4 @@ if __name__ == '__main__':
 
     # print(profile.get_ssid_info())
     # # print(obj.get_devices())
-    obj.logout()
+    # obj.logout()

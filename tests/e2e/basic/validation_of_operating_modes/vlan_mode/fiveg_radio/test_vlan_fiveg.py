@@ -7,9 +7,7 @@ import time
 import allure
 import pytest
 
-pytestmark = [pytest.mark.ow_sanity_lf,
-              pytest.mark.multi_vlan,
-              pytest.mark.fiveg]
+pytestmark = [pytest.mark.vlan, pytest.mark.multi_vlan, pytest.mark.test_vlan_config_5g_radio, pytest.mark.fiveg]
 
 setup_params_general = {
     "mode": "VLAN",
@@ -19,7 +17,7 @@ setup_params_general = {
         "wpa": [{"ssid_name": "ssid_wpa_5g", "appliedRadios": ["5G"],
                  "security_key": "something", "vlan": 125}],
 
-        "wpa2_personal": [
+        "wpa2_personal":[
             {"ssid_name": "ssid_wpa2_5g", "appliedRadios": ["5G"],
              "security_key": "something", "vlan": 200}],
 
@@ -47,7 +45,7 @@ class TestVlanConfigFivegRadio(object):
     @allure.testcase(name="test_station_ip_wpa_ssid_5g",
                      url="https://telecominfraproject.atlassian.net/browse/WIFI-2169")
     def test_station_ip_wpa_ssid_5g(self, lf_test, lf_tools,
-                                    station_names_fiveg,
+                                    update_report, station_names_fiveg,
                                     test_cases, get_configuration):
         """
             Client connectivity using vlan, wpa, fiveg
@@ -62,7 +60,7 @@ class TestVlanConfigFivegRadio(object):
         vlan = 125
         lanforge_data = get_configuration["traffic_generator"]["details"]
         upstream_port = lanforge_data["upstream"]
-        print("upstream_port: ", upstream_port)
+        print("upstream_port: ",upstream_port)
         port_resources = upstream_port.split(".")
         lf_test.Client_disconnect(station_names_fiveg)
         passes, result = lf_test.Client_Connectivity(ssid=ssid_name, security=security,
@@ -103,7 +101,7 @@ class TestVlanConfigFivegRadio(object):
     @allure.testcase(name="test_station_ip_wpa2_ssid_5g",
                      url="https://telecominfraproject.atlassian.net/browse/WIFI-2157")
     def test_station_ip_wpa2_ssid_5g(self, lf_test, lf_tools,
-                                     station_names_fiveg,
+                                     update_report, station_names_fiveg,
                                      test_cases, get_configuration):
         """
             Client connectivity using vlan, wpa2, fiveg
@@ -151,7 +149,7 @@ class TestVlanConfigFivegRadio(object):
     @allure.testcase(name="test_disable_vlan_wpa2_ssid_5g",
                      url="https://telecominfraproject.atlassian.net/browse/WIFI-2174")
     def test_disable_vlan_wpa2_ssid_5g(self, lf_test, lf_tools,
-                                       station_names_fiveg,
+                                       update_report, station_names_fiveg,
                                        test_cases, get_configuration):
         """
             Client connectivity using vlan, wpa2, fiveg
@@ -206,7 +204,7 @@ class TestVlanConfigFivegRadio(object):
     @allure.testcase(name="test_station_ip_open_ssid_5g",
                      url="https://telecominfraproject.atlassian.net/browse/WIFI-2161")
     def test_station_ip_open_ssid_5g(self, lf_test, lf_tools,
-                                     station_names_fiveg,
+                                     update_report, station_names_fiveg,
                                      test_cases, get_configuration):
         """
             Client connectivity using vlan, open, fiveg
@@ -261,7 +259,7 @@ class TestVlanConfigFivegRadio(object):
     @allure.testcase(name="test_station_ip_wpa_wpa2_personal_ssid_5g",
                      url="https://telecominfraproject.atlassian.net/browse/WIFI-2167")
     def test_station_ip_wpa_wpa2_personal_ssid_5g(self, lf_test,
-                                                  lf_tools, station_names_fiveg,
+                                                  lf_tools, update_report, station_names_fiveg,
                                                   test_cases, get_configuration):
         """
             Client connectivity using vlan, wpa, wpa2, fiveg
@@ -318,8 +316,8 @@ class TestVlanConfigFivegRadio(object):
     @allure.testcase(name="test_station_ip_wpa2_personal_ssid_5g",
                      url="https://telecominfraproject.atlassian.net/browse/WIFI-2172")
     def test_enable_vlan_wpa2_ssid_5g(self, lf_test, lf_tools,
-                                      station_names_fiveg,
-                                      test_cases, get_configuration):
+                                              update_report, station_names_fiveg,
+                                              test_cases, get_configuration):
         """
             Client connectivity using vlan, wpa2, fiveg
             pytest -m enable_vlan_fiveg

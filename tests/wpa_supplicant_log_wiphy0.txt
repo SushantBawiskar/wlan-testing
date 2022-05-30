@@ -1,0 +1,36 @@
+1652765053.227061: Successfully initialized wpa_supplicant
+1652765054.205885: nl80211: kernel reports: key not allowed, no current_bss
+1652765054.206083: nl80211: kernel reports: key not allowed, no current_bss
+1652765054.206165: nl80211: kernel reports: key not allowed, no current_bss
+1652765054.206333: nl80211: kernel reports: key not allowed, no current_bss
+1652765054.206413: nl80211: kernel reports: key not allowed, no current_bss
+1652765054.206522: nl80211: kernel reports: key not allowed, no current_bss
+1652765054.333477: CTRL_IFACE monitor attached /tmp/wpa_ctrl_9384-2\x00
+1652765054.333761: CTRL_IFACE monitor attached /tmp/wpa_ctrl_9384-1\x00
+1652765054.361665: sta000: SME: Trying to authenticate with 92:3c:b3:6c:46:dd (SSID='ssid_wpa_2g_nat' freq=2437 MHz)
+1652765054.375470: sta000: Trying to associate with 92:3c:b3:6c:46:dd (SSID='ssid_wpa_2g_nat' freq=2437 MHz)
+1652765054.389517: sta000: Associated with 92:3c:b3:6c:46:dd
+1652765054.393038: sta000: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+1652765054.393832: sta000: CTRL-EVENT-REGDOM-CHANGE init=COUNTRY_IE type=COUNTRY alpha2=CA
+1652765054.447900: sta000: WPA: Key negotiation completed with 92:3c:b3:6c:46:dd [PTK=CCMP GTK=CCMP]
+1652765054.449408: sta000: CTRL-EVENT-CONNECTED - Connection to 92:3c:b3:6c:46:dd completed [id=0 id_str=]
+1652765060.878393: nl80211: kernel reports: key not allowed, no current_bss
+1652765060.878665: nl80211: kernel reports: key not allowed, no current_bss
+1652765060.878771: nl80211: kernel reports: key not allowed, no current_bss
+1652765060.878854: nl80211: kernel reports: key not allowed, no current_bss
+1652765060.878962: nl80211: kernel reports: key not allowed, no current_bss
+1652765060.879070: nl80211: kernel reports: key not allowed, no current_bss
+1652765073.383361: sta0000: CTRL-EVENT-DSCP-POLICY clear_all
+1652765073.396574: sta0000: CTRL-EVENT-DSCP-POLICY clear_all
+1652765073.396716: nl80211: deinit ifname=sta0000
+1652765090.706245: sta000: CTRL-EVENT-DISCONNECTED bssid=92:3c:b3:6c:46:dd reason=3
+1652765090.732142: nl80211: kernel reports: key not allowed, no current_bss
+1652765090.732835: nl80211: kernel reports: key not allowed, no current_bss
+1652765090.733008: nl80211: kernel reports: key not allowed, no current_bss
+1652765090.737033: sta000: CTRL-EVENT-REGDOM-CHANGE init=CORE type=WORLD
+1652765090.739412: sta000: CTRL-EVENT-REGDOM-CHANGE init=USER type=COUNTRY alpha2=US
+1652765090.860955: sta000: SME: Trying to authenticate with 92:3c:b3:6c:46:dd (SSID='ssid_wpa_2g_nat' freq=2437 MHz)
+1652765091.833152: sta000: CTRL-EVENT-DSCP-POLICY clear_all
+1652765091.841977: sta000: CTRL-EVENT-DSCP-POLICY clear_all
+1652765091.842190: nl80211: deinit ifname=sta000
+1652765091.880867: Could not read interface sta000 flags: No such device

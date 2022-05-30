@@ -12,9 +12,8 @@ import json
 import allure
 
 
-@pytest.mark.ow_sanity_lf
 @pytest.mark.uc_sanity
-@pytest.mark.owprov_api_tests
+@pytest.mark.prov_all_api
 @allure.feature("SDK PROV REST API")
 class TestUcentralProvisionService(object):
 

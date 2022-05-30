@@ -13,8 +13,7 @@ import allure
 
 
 @pytest.mark.uc_sanity
-@pytest.mark.ow_sanity_lf
-@pytest.mark.owgw_api_tests
+@pytest.mark.gw_all_api
 @allure.feature("SDK REST API")
 class TestUcentralGatewayService(object):
     """
@@ -238,4 +237,4 @@ class TestUcentralGatewayService(object):
         resp = setup_controller.get_device_status(device_name)
         print(resp.json())
         allure.attach(name="Device status", body=str(resp.json()), attachment_type=allure.attachment_type.JSON)
-
+        assert resp.status_code == 200

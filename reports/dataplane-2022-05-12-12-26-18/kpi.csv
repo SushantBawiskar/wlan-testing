@@ -1,0 +1,27 @@
+Date	test-rig	test-tag	dut-hw-version	dut-sw-version	dut-model-num	dut-serial-num	test-priority	test-id	short-description	pass/fail	numeric-score	test details	Units	Graph-Group	Subtest-Pass	Subtest-Fail
+1652339851444			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-TX-60pkt-sz		3.753938	Throughput at specified settings.	Mbps	Throughput	0	0
+1652339872549			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-RX-60pkt-sz		2.072306	Throughput at specified settings.	Mbps	Throughput	0	0
+1652339896753			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-TX-142pkt-sz		22.782162	Throughput at specified settings.	Mbps	Throughput	0	0
+1652339919589			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-RX-142pkt-sz		13.663905	Throughput at specified settings.	Mbps	Throughput	0	0
+1652339940143			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-TX-142pkt-sz		48.776631	Throughput at specified settings.	Mbps	Throughput	0	0
+1652339962036			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-RX-142pkt-sz		30.435948	Throughput at specified settings.	Mbps	Throughput	0	0
+1652339982283			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-TX-256pkt-sz		43.3827	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340004102			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-RX-256pkt-sz		28.552703	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340024823			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-TX-256pkt-sz		105.730556	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340045018			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-RX-256pkt-sz		75.018309	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340064378			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-TX-512pkt-sz		88.780007	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340084955			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-RX-512pkt-sz		57.04094	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340106314			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-TX-512pkt-sz		220.890286	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340125776			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-RX-512pkt-sz		140.463887	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340145356			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-TX-1024pkt-sz		138.138847	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340167387			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-RX-1024pkt-sz		107.436169	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340188174			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-TX-1024pkt-sz		321.421724	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340211059			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-RX-1024pkt-sz		261.61425	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340233184			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-TX-MTU		240.208326	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340252631			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-RX-MTU		148.465368	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340273167			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-TX-MTU		328.653469	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340295650			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-RX-MTU		355.350274	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340316486			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-TX-4000pkt-sz		289.01524	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340337996			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	UDP-DUT-RX-4000pkt-sz		192.204622	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340356898			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-TX-4000pkt-sz		327.674874	Throughput at specified settings.	Mbps	Throughput	0	0
+1652340377696			wifi6	TIP-devel-d5d7721	edgecore_eap101	903cb36c46da	95	Dataplane	TCP-DUT-RX-4000pkt-sz		352.3133	Throughput at specified settings.	Mbps	Throughput	0	0

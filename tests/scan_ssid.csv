@@ -1,0 +1,7 @@
+,age,auth,beacon,bss,channel,entity id,frequency,info,signal,ssid
+0,287920,Open,100,90:3c:b3:6c:46:dd,1,1.1.4,2412,2x2 MCS 0-11 AX,-7.0,ssid_open_2g_vlan
+1,875,Open,100,90:3c:b3:6c:46:de,36,1.1.4,5180,2x2 MCS 0-11 AX,-29.0,ssid_open_5g_vlan
+2,287887,WPA,100,92:3c:b3:6c:46:dd,1,1.1.4,2412,2x2 MCS 0-11 AX,-7.0,ssid_wpa_2g_vlan
+3,858,WPA,100,92:3c:b3:6c:46:de,36,1.1.4,5180,2x2 MCS 0-11 AX,-29.0,ssid_wpa_5g_vlan
+4,287912,WPA2,100,96:3c:b3:6c:46:dd,1,1.1.4,2412,2x2 MCS 0-11 AX,-7.0,ssid_wpa2_2g_vlan
+5,819,WPA2,100,96:3c:b3:6c:46:de,36,1.1.4,5180,2x2 MCS 0-11 AX,-30.0,ssid_wpa2_5g_vlan
