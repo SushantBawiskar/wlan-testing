@@ -39,6 +39,7 @@ class TestDataplaneThroughputBRIDGE(object):
     @allure.testcase(url="https://telecominfraproject.atlassian.net/browse/WIFI-3913", name="WIFI-3913")
     @pytest.mark.wpa2_personal
     @pytest.mark.twog
+    @pytest.mark.ac_station
     def test_tcp_udp_wpa2_personal_bridge_2g_band_ac_station(self, lf_tools,
                                                              lf_test, station_names_twog,
                                                              create_lanforge_chamberview_dut,
@@ -73,6 +74,7 @@ class TestDataplaneThroughputBRIDGE(object):
     @allure.testcase(url="https://telecominfraproject.atlassian.net/browse/WIFI-3914", name="WIFI-3914")
     @pytest.mark.wpa2_personal
     @pytest.mark.fiveg
+    @pytest.mark.ac_station
     def test_tcp_udp_wpa2_personal_bridge_5g_band_ac_station(self, lf_tools,
                                                              lf_test, station_names_fiveg,
                                                              create_lanforge_chamberview_dut, get_configuration):
@@ -104,8 +106,9 @@ class TestDataplaneThroughputBRIDGE(object):
         else:
             assert False
 
-    @pytest.mark.wpa2_personal
+    @pytest.mark.wpa2_personal_ax
     @pytest.mark.fiveg
+    @pytest.mark.ax_station
     def test_tcp_udp_wpa2_personal_bridge_5g_band_ax_station(self, lf_tools,
                                                              lf_test, station_names_ax, create_lanforge_chamberview_dut,
                                                              get_configuration):
@@ -137,8 +140,9 @@ class TestDataplaneThroughputBRIDGE(object):
         else:
             assert False
 
-    @pytest.mark.wpa2_personal
+    @pytest.mark.wpa2_personal_ax
     @pytest.mark.twog
+    @pytest.mark.ax_station
     def test_tcp_udp_wpa2_personal_bridge_2g_band_ax_station(self, lf_tools,
                                                              lf_test, station_names_ax, create_lanforge_chamberview_dut,
                                                              get_configuration):
