@@ -2,7 +2,7 @@ import allure
 import pytest
 
 pytestmark = [pytest.mark.ow_client_connectivity_lf, pytest.mark.ow_sanity_lf,
-              pytest.mark.bridge, pytest.mark.enterprise, pytest.mark.tls, pytest.mark.uc_sanity]
+              pytest.mark.bridge, pytest.mark.enterprise, pytest.mark.tls, pytest.mark.uc_sanity,pytest.mark.bridge]
 
 setup_params_enterprise = {
     "mode": "BRIDGE",

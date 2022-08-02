@@ -2,7 +2,7 @@ import allure
 import pytest
 
 pytestmark = [pytest.mark.ow_client_connectivity_lf,
-              pytest.mark.nat, pytest.mark.enterprise, pytest.mark.tls, pytest.mark.uc_sanity]
+              pytest.mark.nat, pytest.mark.enterprise, pytest.mark.tls, pytest.mark.uc_sanity,pytest.mark.nat]
 
 setup_params_enterprise = {
     "mode": "NAT",

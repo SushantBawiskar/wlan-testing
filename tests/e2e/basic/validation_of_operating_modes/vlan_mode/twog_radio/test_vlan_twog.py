@@ -10,7 +10,7 @@ import pytest
 
 pytestmark = [pytest.mark.ow_regression_lf,
               pytest.mark.ow_multi_vlan_tests_lf,
-              pytest.mark.twog,pytest.mark.vlan_mode_ip]
+              pytest.mark.twog,pytest.mark.vlan_mode_ip,pytest.mark.vlan]
 
 setup_params_general = {
     "mode": "VLAN",
